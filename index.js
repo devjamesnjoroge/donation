@@ -12,6 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the donate button element
+    var donateButton = document.getElementById("donateButton");
+
+    // Add click event listener to the donate button
+    donateButton.addEventListener("click", function() {
+        // Redirect to the donate page
+        window.location.href = "/donate.html";
+    });
+});
+
 
 // Render the PayPal button
 paypal.Buttons({
