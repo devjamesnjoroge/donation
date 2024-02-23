@@ -37,6 +37,7 @@ header{
 .nav__ul{
     list-style-type: none;
     display: inline-block;
+    z-index: 2;
 }
 
 .nav__ul li{
@@ -101,6 +102,85 @@ header{
 :is(.nav:hover, .nav:focus) .menu__bar{
     background-color: transparent;
 }
+
+main {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .main__h2{
+    text-align: center;
+    color: var(--SECONDARY-COLOR);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .main__h2 span{
+    color: red;
+    font-size: 2rem;
+  }
+  
+  .container {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  
+  .amount-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
+  .amount-button {
+    padding: 10px;
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .amount-button.selected {
+    background-color: #00cc00;
+  }
+  
+  .custom-amount {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-amount label {
+    margin-right: 10px;
+  }
+  
+  #paypal-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #flash-message {
+    background-color: #00cc00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
 
 
 @media screen and (max-width: 576px) {

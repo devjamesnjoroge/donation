@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RETRO DONATION PAGE</title>
     <link rel="stylesheet" href="donate.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AUJ-PLBRxJ0eSoyewy0jwRQKeYTZ3zSiOCxSbBvEPO7kNqKDCvFnjuk1xgdqFPoBhadou5lestrO_LBe"></script>
 </head>
 <body>
 
@@ -24,6 +25,24 @@
             </button>
         </nav>
     </header>
+    <main>
+        <div class="container">
+            <div class="main__h2">Show some love <span>&hearts;</span></div>
+            <div class="amount-options">
+              <button class="amount-button" data-amount="1">$1</button>
+              <button class="amount-button" data-amount="5">$5</button>
+              <button class="amount-button" data-amount="10">$10</button>
+              <button class="amount-button" data-amount="15">$15</button>
+              <button class="amount-button" data-amount="20">$20</button>
+            </div>
+            <div class="custom-amount">
+              <label for="custom-amount">Custom Amount:</label>
+              <input type="number" id="custom-amount" name="custom-amount" step="0.01" placeholder="Enter custom amount">
+            </div>
+            <div id="paypal-button-container"></div>
+            <div id="flash-message" class="hidden">Amount selected!</div>
+          </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
