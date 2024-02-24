@@ -121,7 +121,7 @@ header{
     .nav__ul{
         list-style: none;
         position: absolute;
-        background-color: orange;
+        background-color: var(--SECONDARY-COLOR);
         top: -10000px;
         left: 0;
         height: 100vh;
@@ -176,4 +176,67 @@ header{
         width: 90vw;
     }
     
+}
+
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-section {
+    background-color: var(--PRIMARY-COLOR); /* Secondary color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 
+    0 10px 15px rgba(0, 0, 0, 0.1), /* Shadow below */
+    0 10px 10px rgba(0, 0, 0, 0.05), /* Shadow above */
+    inset 0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow */
+  }
+  
+  .contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--SECONDARY-COLOR);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  footer{
+    margin-top: 3rem;
+    background-color: #ff8800;
+    color: var(--PRIMARY-COLOR);
+    padding: 1rem;
+    text-align: center;
 }

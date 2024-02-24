@@ -181,6 +181,13 @@ main {
     display: none;
   }
 
+  footer{
+    margin-top: 3rem;
+    background-color: #ff8800;
+    color: var(--PRIMARY-COLOR);
+    padding: 1rem;
+    text-align: center;
+}
 
   
   
